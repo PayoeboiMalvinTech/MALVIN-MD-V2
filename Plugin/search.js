@@ -51,7 +51,7 @@ async (conn, mek, m, { from, args, reply }) => {
           },
           externalAdReply: {
               title: `MALVIN-MD Youtube Information`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `malvink003@gmail.com`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -118,7 +118,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
           },
           externalAdReply: {
               title: `MALVIN-MD Github Repository Information`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,

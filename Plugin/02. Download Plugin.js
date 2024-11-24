@@ -181,14 +181,15 @@ cmd(
             const data = search.videos[0];
             const url = data.url;
 
-            let desc = `*乂 MALVIN-MD SONG DOWNLOADER*
+            let desc = `*👾 𝙼𝙰𝙻𝚅𝙸𝙽 𝚅𝟸 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁*
 
-*⚙️ 𝖳𝗂𝗍𝗅𝖾* : ${data.title}
-*📃 𝖣𝖾𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇* : ${data.description}
-*🚀 𝖵𝗂𝖾𝗐𝗌* : ${data.views}
-*⏰ 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇* : ${data.timestamp}
-*📆 𝖴𝗉𝗅𝗈𝖺𝖽𝖾𝖽 𝖮𝗇* : ${data.ago}
-*🎬 𝖢𝗁𝖺𝗇𝗇𝖾𝗅* : ${data.author.name}
+╭───────────────╮  
+*➢📌 ᴛɪᴛʟᴇ*÷ ${data.title}
+*➢👀 ᴠɪᴇᴡꜱ*÷ ${data.views}
+*➢💻 ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*÷ ${data.description}
+*➢⏳ ᴅᴜʀᴀᴛɪᴏɴ*÷ ${data.timestamp}
+*➢🌎ᴄʜᴀɴɴᴇʟ*÷ ${data.ago}
+╰───────────────╯
 
 *乂 REPLY THE DOWNLOAD OPTION*  
 
@@ -210,7 +211,7 @@ cmd(
                             newsletterJid: "120363306168354073@newsletter",
                         },
                         externalAdReply: {
-                            title: `SAHAS-MD Song Downloader`,
+                            title: `MALVIN-MD Song Downloader`,
                             body: `${data.title} : Powerd By ＭＡＬＶＩＮ-MD Song Information Search Engine`,
                             thumbnailUrl: data.thumbnail,
                             sourceUrl: ``,
@@ -350,14 +351,15 @@ cmd(
             const data = search.videos[0];
             const url = data.url;
 
-            let desc = `*乂 MALVIN-MD VIDEO DOWNLOADER*
+            let desc = `*👾 𝙼𝙰𝙻𝚅𝙸𝙽 𝚅𝟸 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁*
 
-*⚙️ 𝖳𝗂𝗍𝗅𝖾* : ${data.title}
-*📃 𝖣𝖾𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇* : ${data.description}
-*🚀 𝖵𝗂𝖾𝗐𝗌* : ${data.views}
-*⏰ 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇* : ${data.timestamp}
-*📆 𝖴𝗉𝗅𝗈𝖺𝖽𝖾𝖽 𝖮𝗇* : ${data.ago}
-*🎬 𝖢𝗁𝖺𝗇𝗇𝖾𝗅* : ${data.author.name}
+╭───────────────╮  
+*➢📌 ᴛɪᴛʟᴇ*÷ ${data.title}
+*➢👀 ᴠɪᴇᴡꜱ*÷ ${data.views}
+*➢💻 ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*÷ ${data.description}
+*➢⏳ ᴅᴜʀᴀᴛɪᴏɴ*÷ ${data.timestamp}
+*➢🌎ᴄʜᴀɴɴᴇʟ*÷ ${data.ago}
+╰───────────────╯
 
 *乂 REPLY THE DOWNLOAD OPTION*  
 

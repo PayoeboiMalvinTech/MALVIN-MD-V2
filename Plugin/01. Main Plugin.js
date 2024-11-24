@@ -174,7 +174,7 @@ cmd({
           },
           externalAdReply: {
               title: `I'm Alive Now 👨‍💻`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -216,7 +216,11 @@ cmd({
     
     async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-    
+
+const voice = {
+    menu: 'media/malvin.mp3'
+}
+
 let menu = {
 main: '',
 download: '',
@@ -271,73 +275,72 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 
           let desc = `*👋 Hello ${pushname}*
           
-*╭─「 ᴄᴏᴍᴍᴀɴᴅ ᴘᴀɴᴇʟ 」*
+*╭─「 ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜ 」*
 *│◈ ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}*
 *│◈ ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 *│◈ ᴘʟᴀᴛꜰᴏʀᴍ : ${os.hostname()}*
-*│◈ ᴠᴇʀꜱɪᴏɴ : 1.0.0*
+*│◈ ᴠᴇʀꜱɪᴏɴ : 2.0.0*
 *╰──────────●●►*
 
-╭──────────●●►
- 📥 *𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.download}
-╰───────────●●►
-╭──────────●●►
- 🎬 *𝐌𝐨𝐯𝐢𝐞 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.movie}
-╰───────────●●►
-╭──────────●●►
- 👾 *𝐀𝐢 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.ai}
-╰───────────●●►
-╭──────────●●►
- 🔧 *𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.main}
-╰───────────●●►
-╭──────────●●►
- 🎉 *𝐅𝐮𝐧 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.fun}
-╰───────────●●►
-╭──────────●●►
- 🔄 *𝐂𝐨𝐧𝐯𝐞𝐫𝐭 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.convert}
-╰───────────●●►
-╭──────────●●►
- 🔍 *𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.search}
-╰───────────●●►
-╭──────────●●►
- 👥 *𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.group}
-╰───────────●●►
-╭──────────●●►
- 🔒 *𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.owner}
-╰───────────●●►
-╭──────────●●►
- ⚙️ *𝐎𝐭𝐡𝐞𝐫 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.other}
-╰───────────●●►
-╭──────────●●►
- 🛠️ *𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.tools}
-╰───────────●●►
-╭──────────●●►
- 📰 *𝐍𝐞𝐰𝐬 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.news}
-╰───────────●●►
+╭━━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙴𝙽𝚄 ❯━╮
+        ───────
+*│► ${menu.download}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙼𝙾𝚅𝙸𝙴 𝙼𝙴𝙽𝚄 ❯━╮
+       ───────
+*│► ${menu.movie}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙰𝚒 𝙼𝙴𝙽𝚄 ❯━╮
+     ───────
+*│► ${menu.ai}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙼𝙰𝙸𝙽 𝙼𝙴𝙽𝚄 ❯━╮
+      ───────
+*│► ${menu.main}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙵𝚄𝙽 𝙼𝙴𝙽𝚄 ❯━╮
+      ───────
+*│► ${menu.fun}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙼𝙴𝙽𝚄 ❯━╮
+        ───────
+*│► ${menu.convert}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙴𝙽𝚄 ❯━╮
+       ───────
+*│► ${menu.search}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙶𝚁𝙾𝚄𝙿 𝙼𝙴𝙽𝚄 ❯━╮
+       ───────
+*│► ${menu.group}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙾𝚆𝙽𝙴𝚁 𝙼𝙴𝙽𝚄 ❯━╮
+       ───────
+*│► ${menu.owner}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙾𝚃𝙷𝙴𝚁 𝙼𝙴𝙽𝚄 ❯━╮
+      ───────
+*│► ${menu.other}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝚃𝙾𝙾𝙻𝚂 𝙼𝙴𝙽𝚄 ❯━╮
+       ───────
+*│► ${menu.tools}*
+╰━━━━━━━━━━━━⪼
+●●►
+╭━━❮ 𝙽𝙴𝚆𝚂 𝙼𝙴𝙽𝚄 ❯━╮
+      ───────
+*│► ${menu.news}*
+╰━━━━━━━━━━━━⪼
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ*`
 
@@ -360,7 +363,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
           },
           externalAdReply: {
               title: `MALVIN-MD Menu List`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -448,7 +451,7 @@ cmd({
           },
           externalAdReply: {
               title: `MALVIN-MD Owner Information`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -468,7 +471,7 @@ cmd({
       pattern: "support",
       desc: "To get the bot informations.",
       category: "main",
-      react: "⛓",
+      react: "🥰",
       filename: __filename
     },
     
@@ -510,6 +513,8 @@ cmd({
 
 *Youtube Channel Link:* https://www.youtube.com/@malvintech2 
 
+*Github Profile Link:* https://github.com/kingmalvn 
+
 *Whatsapp Channel Link:* https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ*`
@@ -533,7 +538,7 @@ cmd({
           },
           externalAdReply: {
               title: `MALVIN-MD Support Channels`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -624,7 +629,7 @@ cmd({
           },
           externalAdReply: {
               title: `MALVIN-MD Repo Informations`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -713,7 +718,7 @@ cmd({
           },
           externalAdReply: {
               title: `MALVIN-MD About`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -734,7 +739,7 @@ cmd({
       alias: ["status", "botinfo"],
       desc: "Check uptime, RAM usage, CPU info, and more",
       category: "main",
-      react: "🧬",
+      react: "⏰",
       filename: __filename
     }, async (conn, mek, m, { from, reply }) => {
       try {
@@ -797,7 +802,7 @@ cmd({
           },
           externalAdReply: {
               title: `MALVIN-MD System Information`,
-              body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
+              body: `Created by Malvin King`,
               thumbnailUrl: `https://files.catbox.moe/gdvaaw.jpg`,
               sourceUrl: ``,
               mediaType: 1,
@@ -817,7 +822,7 @@ cmd({
     pattern: "ping",
     desc: "Check bot's response time.",
     category: "main",
-    react: "🪄",
+    react: "☄",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, reply }) => {
     try {

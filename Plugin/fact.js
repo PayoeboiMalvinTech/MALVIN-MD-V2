@@ -20,6 +20,8 @@ async (conn, mek, m, { from, q, reply }) => {
 ${fact}
 
 Isn't that interesting? 😄
+
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ*
 `;
 
         return reply(funFact);

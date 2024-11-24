@@ -21,14 +21,14 @@ const url = data.url
     
 const ytdl = await fetchJson(`${apilink}/download/ytmp3?url=${data.url}`)
     
-let message = `‎‎*乂 MALVIN-MD SONG DOWNLOADER*
-
-*⚙️ 𝖳𝗂𝗍𝗅𝖾* : ${data.title}
-*📃 𝖣𝖾𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇* : ${data.description}
-*🚀 𝖵𝗂𝖾𝗐𝗌* : ${data.views}
-*⏰ 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇* : ${data.timestamp}
-*📆 𝖴𝗉𝗅𝗈𝖺𝖽𝖾𝖽 𝖮𝗇* : ${data.ago}
-*🎬 𝖢𝗁𝖺𝗇𝗇𝖾𝗅* : ${data.author.name}
+let message = `‎‎*👾 𝙼𝙰𝙻𝚅𝙸𝙽 𝚅𝟸 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁*
+╭───────────────╮  
+*➢📌 ᴛɪᴛʟᴇ*÷ ${data.title}
+*➢👀 ᴠɪᴇᴡꜱ*÷ ${data.views}
+*➢💻 ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*÷ ${data.description}
+*➢⏳ ᴅᴜʀᴀᴛɪᴏɴ*÷ ${data.timestamp}
+*➢⏱️ᴀɢᴏ*÷ ${data.ago}
+╰───────────────╯
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ*`;
 
